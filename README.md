@@ -1,115 +1,227 @@
-# 🛍️ MERN E-Commerce Platform
+# 🛍️ E-Commerce Platform# 🛍️ MERN E-Commerce Platform
 
-A modern, full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring OAuth authentication, real-time updates, and beautiful animations.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+Modern full-stack e-commerce application built with **Next.js 15**, **TypeScript**, **MongoDB**, and **Tailwind CSS**.A modern, full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring OAuth authentication, real-time updates, and beautiful animations.
+
+
+
+## 🚀 Quick Start![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
-![React](https://img.shields.io/badge/react-19.2.0-blue.svg)
 
-## ✨ Features
+```bash![React](https://img.shields.io/badge/react-19.2.0-blue.svg)
 
-### 🔐 Authentication & Security
-- **JWT Authentication** with access & refresh tokens
+# Navigate to the app
+
+cd next-app## ✨ Features
+
+
+
+# Install dependencies### 🔐 Authentication & Security
+
+npm install- **JWT Authentication** with access & refresh tokens
+
 - **Google OAuth 2.0** integration
-- **Role-based access control** (user, admin, seller)
-- HTTP-only cookies for secure token storage
+
+# Set up environment variables- **Role-based access control** (user, admin, seller)
+
+# Copy .env.local and update with your values- HTTP-only cookies for secure token storage
+
 - Password hashing with bcrypt
-- Email verification support
-- Password reset functionality
-- Rate limiting & CORS protection
+
+# Run development server- Email verification support
+
+npm run dev- Password reset functionality
+
+```- Rate limiting & CORS protection
+
 - XSS & MongoDB injection protection
 
+Visit [http://localhost:3000](http://localhost:3000)
+
 ### 🛒 E-Commerce Features
-- Product catalog with categories
+
+## ✨ Features- Product catalog with categories
+
 - Shopping cart with persistent state
-- Wishlist functionality
-- Order management system
-- Payment gateway integration (Stripe, Razorpay)
-- Coupon & discount system
-- Product reviews & ratings
-- Inventory management
-- Multi-variant products (size, color, etc.)
+
+- 🔐 **JWT Authentication** - Secure user registration and login- Wishlist functionality
+
+- 🛒 **Shopping Cart** - Redux-powered cart management- Order management system
+
+- 🎨 **Dark Mode** - Theme switching with persistence- Payment gateway integration (Stripe, Razorpay)
+
+- 📱 **Responsive Design** - Mobile-first approach- Coupon & discount system
+
+- ⚡ **Server-Side Rendering** - Better SEO and performance- Product reviews & ratings
+
+- 🔄 **API Routes** - Built-in backend with Next.js- Inventory management
+
+- 💳 **Product Catalog** - Browse and filter products- Multi-variant products (size, color, etc.)
+
+- 🎭 **Smooth Animations** - Framer Motion effects
 
 ### 🎨 UI/UX
-- **Beautiful animations** with Framer Motion
+
+## 🛠️ Tech Stack- **Beautiful animations** with Framer Motion
+
 - **Smooth scroll effects** and transitions
-- **Hover animations** on buttons and cards
-- Dark/Light theme support
-- Responsive design (mobile, tablet, desktop)
-- Modern, clean interface
-- Loading states & skeletons
-- Toast notifications
+
+### Frontend- **Hover animations** on buttons and cards
+
+- **Next.js 15** - React framework with App Router- Dark/Light theme support
+
+- **React 19** - UI library- Responsive design (mobile, tablet, desktop)
+
+- **TypeScript** - Type safety- Modern, clean interface
+
+- **Tailwind CSS** - Utility-first styling- Loading states & skeletons
+
+- **Framer Motion** - Animations- Toast notifications
+
+- **Redux Toolkit** - State management
 
 ### 🏗️ Architecture
-- **Monorepo structure** with workspaces
-- **TypeScript** throughout the stack
-- **Modular backend** (feature-based organization)
-- **Redux Toolkit** for state management
-- **React Query** for server state
-- **Zod** for validation
-- **ESLint & Prettier** for code quality
 
-## 🚀 Tech Stack
+### Backend- **Monorepo structure** with workspaces
 
-### Frontend
-- **React 19** - UI library
-- **TypeScript** - Type safety
-- **Redux Toolkit** - State management
-- **React Router** - Navigation
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **React Query** - Server state
-- **React Hook Form** - Form handling
-- **Zod** - Schema validation
-- **Axios** - HTTP client
-- **Vite** - Build tool
+- **Next.js API Routes** - RESTful API- **TypeScript** throughout the stack
 
-### Backend
-- **Node.js** - Runtime
+- **MongoDB** - NoSQL database- **Modular backend** (feature-based organization)
+
+- **Mongoose** - ODM for MongoDB- **Redux Toolkit** for state management
+
+- **JWT** - Authentication tokens- **React Query** for server state
+
+- **bcryptjs** - Password hashing- **Zod** for validation
+
+- **Zod** - Schema validation- **ESLint & Prettier** for code quality
+
+
+
+## 📁 Project Structure## 🚀 Tech Stack
+
+
+
+```### Frontend
+
+next-app/- **React 19** - UI library
+
+├── src/- **TypeScript** - Type safety
+
+│   ├── app/                    # Next.js App Router- **Redux Toolkit** - State management
+
+│   │   ├── api/                # Backend API routes- **React Router** - Navigation
+
+│   │   ├── page.tsx            # Homepage- **Tailwind CSS** - Styling
+
+│   │   └── layout.tsx          # Root layout- **Framer Motion** - Animations
+
+│   ├── components/             # React components- **React Query** - Server state
+
+│   ├── features/               # Redux slices- **React Hook Form** - Form handling
+
+│   ├── lib/                    # Backend utilities- **Zod** - Schema validation
+
+│   ├── models/                 # Mongoose models- **Axios** - HTTP client
+
+│   └── store/                  # Redux store- **Vite** - Build tool
+
+├── public/                     # Static assets
+
+└── .env.local                  # Environment variables### Backend
+
+```- **Node.js** - Runtime
+
 - **Express.js** - Web framework
-- **TypeScript** - Type safety
+
+## 🔧 Environment Variables- **TypeScript** - Type safety
+
 - **MongoDB** - Database
-- **Mongoose** - ODM
+
+Create `.env.local` in the `next-app` directory:- **Mongoose** - ODM
+
 - **Passport.js** - Authentication
-- **JWT** - Token-based auth
-- **bcrypt** - Password hashing
-- **Cloudinary** - Image uploads
-- **Stripe/Razorpay** - Payments
-- **Socket.io** - Real-time updates
-- **BullMQ** - Job queues
-- **Pino** - Logging
 
-### DevOps & Tools
+```env- **JWT** - Token-based auth
+
+MONGODB_URI=your-mongodb-connection-string- **bcrypt** - Password hashing
+
+JWT_ACCESS_SECRET=your-secret-min-32-chars- **Cloudinary** - Image uploads
+
+JWT_REFRESH_SECRET=your-secret-min-32-chars- **Stripe/Razorpay** - Payments
+
+NEXTAUTH_URL=http://localhost:3000- **Socket.io** - Real-time updates
+
+NEXTAUTH_SECRET=your-nextauth-secret- **BullMQ** - Job queues
+
+```- **Pino** - Logging
+
+
+
+## 📝 Available Scripts### DevOps & Tools
+
 - **NPM Workspaces** - Monorepo management
-- **Concurrently** - Run multiple dev servers
-- **ESLint** - Linting
-- **Prettier** - Code formatting
-- **ts-node-dev** - Development server
 
-## 📦 Project Structure
+```bash- **Concurrently** - Run multiple dev servers
 
-```
+npm run dev          # Start dev server- **ESLint** - Linting
+
+npm run build        # Build for production- **Prettier** - Code formatting
+
+npm start            # Start production server- **ts-node-dev** - Development server
+
+npm run lint         # Run ESLint
+
+```## 📦 Project Structure
+
+
+
+## 🔌 API Endpoints```
+
 ecommerce/
-├── apps/
-│   ├── api/                    # Backend API
-│   │   ├── src/
-│   │   │   ├── config/        # Configuration files
-│   │   │   │   ├── database.ts
+
+- `POST /api/auth/register` - Register new user├── apps/
+
+- `POST /api/auth/login` - Login user│   ├── api/                    # Backend API
+
+- `GET /api/auth/me` - Get current user│   │   ├── src/
+
+- `POST /api/auth/logout` - Logout user│   │   │   ├── config/        # Configuration files
+
+- `GET /api/health` - Health check│   │   │   │   ├── database.ts
+
 │   │   │   │   ├── env.ts
-│   │   │   │   └── passport.ts
+
+## 🚀 Deployment│   │   │   │   └── passport.ts
+
 │   │   │   ├── middleware/    # Express middleware
-│   │   │   ├── modules/       # Feature modules
-│   │   │   │   ├── auth/      # Authentication
-│   │   │   │   ├── users/     # User management
-│   │   │   │   ├── products/  # Products (planned)
-│   │   │   │   ├── orders/    # Orders (planned)
-│   │   │   │   └── ...
+
+### Vercel (Recommended)│   │   │   ├── modules/       # Feature modules
+
+```bash│   │   │   │   ├── auth/      # Authentication
+
+npm i -g vercel│   │   │   │   ├── users/     # User management
+
+cd next-app│   │   │   │   ├── products/  # Products (planned)
+
+vercel│   │   │   │   ├── orders/    # Orders (planned)
+
+```│   │   │   │   └── ...
+
 │   │   │   ├── utils/         # Utility functions
-│   │   │   ├── app.ts         # Express app setup
+
+---│   │   │   ├── app.ts         # Express app setup
+
 │   │   │   └── server.ts      # Server entry point
-│   │   ├── .env               # Environment variables
+
+**Built with ❤️ using Next.js 15**│   │   ├── .env               # Environment variables
+
 │   │   ├── package.json
-│   │   └── tsconfig.json
+
+For detailed documentation, see `next-app/README.md`│   │   └── tsconfig.json
+
 │   │
 │   └── web/                   # Frontend React app
 │       ├── src/

@@ -1,7 +1,6 @@
 # Dependencies
 node_modules
-/apps/*/node_modules
-/packages/*/node_modules
+next-app/node_modules
 .pnp
 .pnp.js
 
@@ -10,10 +9,8 @@ dist
 build
 .next
 out
-/apps/*/dist
-/apps/*/build
-/packages/*/dist
-/packages/*/build
+next-app/.next
+next-app/out
 
 # Environment variables
 .env
