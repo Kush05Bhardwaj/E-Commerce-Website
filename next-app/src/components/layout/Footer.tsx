@@ -61,18 +61,18 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=electronics" className="hover:text-brand">
-                  Electronics
+                <Link href="/trending" className="hover:text-brand">
+                  Trending
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=fashion" className="hover:text-brand">
-                  Fashion
+                <Link href="/deals" className="hover:text-brand">
+                  Deals
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=home" className="hover:text-brand">
-                  Home & Living
+                <Link href="/about" className="hover:text-brand">
+                  About Us
                 </Link>
               </li>
             </ul>
@@ -83,22 +83,22 @@ export const Footer = () => {
             <h4 className="font-semibold text-slate-900">Support</h4>
             <ul className="mt-4 space-y-2 text-sm text-slate-600">
               <li>
-                <Link href="/help" className="hover:text-brand">
+                <Link href="/support/help" className="hover:text-brand">
                   Help Center
                 </Link>
               </li>
               <li>
-                <Link href="/shipping" className="hover:text-brand">
+                <Link href="/support/shipping" className="hover:text-brand">
                   Shipping Info
                 </Link>
               </li>
               <li>
-                <Link href="/returns" className="hover:text-brand">
+                <Link href="/support/returns" className="hover:text-brand">
                   Returns
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-brand">
+                <Link href="/support/contact" className="hover:text-brand">
                   Contact Us
                 </Link>
               </li>
@@ -110,17 +110,17 @@ export const Footer = () => {
             <h4 className="font-semibold text-slate-900">Legal</h4>
             <ul className="mt-4 space-y-2 text-sm text-slate-600">
               <li>
-                <Link href="/privacy" className="hover:text-brand">
+                <Link href="/legal/privacy" className="hover:text-brand">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="hover:text-brand">
+                <Link href="/legal/terms" className="hover:text-brand">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/cookies" className="hover:text-brand">
+                <Link href="/legal/cookies" className="hover:text-brand">
                   Cookie Policy
                 </Link>
               </li>
